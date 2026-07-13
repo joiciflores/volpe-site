@@ -1,0 +1,166 @@
+ *{
+  margin: 0;
+  padding: 0;
+}
+.main{
+width:100%;
+background:
+linear-gradient(
+to top,
+rgba(110, 44,61, 0.15),
+rgba(110,44,61,0.1)
+),
+url("volpe.jpg.png");
+background-position:center;
+background-size:cover;
+height: 100vh;
+}
+
+.raposa{
+height: 60px;
+width: auto;
+float: left;
+margin-right: 10px;
+}
+
+.barra{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+gap: 15px;
+}
+
+.icone{
+display: flex;
+align-items: center;
+margin-right: 30px;
+}
+
+.logo{
+color:#6e2c3d;
+font-family: "Cormorant Garamond";
+padding-left: 10px;
+}
+.menu{
+flex: 1;
+display: flex;
+justify-content: center;
+}
+
+ul{
+display: flex;
+align-items: center;
+gap: 40px;
+}
+ul li{
+list-style: none;
+font-size: 16px;
+}
+ul li a{
+text-decoration:none;
+color:#6e2c3d;
+}
+ 
+.pesquisa{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.srch{
+font-family: "Times New Roman";
+width:225px;
+height: 25px;
+background: transparent;
+border: 1px solid #6e2c3d;
+border-radius: 15px;
+}
+
+.btn{
+height: 29px;
+padding: 0 10px;
+}
+
+.hero{
+height: 80vh;
+display:flex;
+justify-content: center;
+align-items:center;
+}
+
+.hero-conteudo{
+display: flex;
+flex-direction:column;
+align-items:center;
+gap: 30px;
+}
+.hero-conteudo h1{
+color:#6e2c3d;
+font-size: 60px;
+letter-spacing: 6px;
+}
+.hero-conteudo h2{
+color: #444444;
+font-size: 24px;
+text-align: center;
+line-height:40px;
+}
+.hero-btn{
+width:180px;
+height:50px;
+border:none;
+border-radius:30px;
+background: #6e2c3d;
+color:white;
+font-size:16px;
+cursor: pointer;
+}
+.hero-btn:hover{
+ background: #8a3a4f;
+}
+.mais-vendidos h2{
+text-align:center;
+color:#6e2c3d;
+font-size:50px;
+margin-bottom:60px;
+}
+.mais-vendidos{
+padding: 150px 50px;
+background: #f6f2ee;
+justify-content: center;
+}
+.produtos-grid{
+display:grid;
+grid-template-columns: repeat(3,300px);
+justify-content: center;
+gap: 50px;
+}
+.card-produto{
+background: white;
+border-radius:20px;
+padding:20px;
+text-align: center;
+
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+.card-produto img{
+width:250px;
+height: 350px;
+object-fit: cover;
+border-radius:15px;
+}
+.card-produto h3{
+margin-top: 20px;
+color: #444444;
+}
+.card-produto p{
+margin-top: 10px;
+color:#6e2c3d;
+font-size: 20px;
+font-weight:bold;
+}
+
+
+
