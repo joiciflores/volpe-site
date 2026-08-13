@@ -1,8 +1,24 @@
-const produtos = document.querySelectorAll("prudutos-destaques .card-produtos");
+const produtos = document.querySelectorAll(
+".produtos-destaque .card-produto"
+);
 
 console.log(produtos);
 
 let produtoAtual = 0;
-setInterval(function()){
-    console.log("Passaram 3 segundos");
-}, 30000;
+
+function mostrarproduto() {
+
+    produtos.forEach(function(produto){
+        produto.style.display = "none";
+    });
+    produtos[produtoAtual].style.display="flex";
+    produtoAtual++;
+    
+    if (produtoAtual >= produtos.length) {
+    produtoAtual = 0;
+   }
+}
+
+mostrarproduto();
+
+setInterval(mostrarproduto, 5000);

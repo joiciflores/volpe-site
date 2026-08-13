@@ -1,13 +1,21 @@
+ /*========
+ RESET
+ ==========*/
+ 
  *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+/* HOME */
 .main{
 width:100%;
 background:
 linear-gradient(
 to top,
 rgba(110, 44,61, 0.15),
+
 rgba(110,44,61,0.1)
 ),
 url("../imagens/hero/volpe.jpg.png");
@@ -16,10 +24,11 @@ background-size:cover;
 height: 100vh;
 }
 
+/*LOGO*/
+
 .raposa{
 height: 60px;
 width: auto;
-float: left;
 margin-right: 10px;
 }
 
@@ -36,6 +45,23 @@ padding-left: 10px;
   align-items: center;
 }
 
+/*NAVBAR*/
+
+.navbar{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+gap:15px;
+}
+
+.menu{
+flex: 1;
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+
 .barra{
 display: flex;
 justify-content: space-between;
@@ -50,32 +76,18 @@ align-items: center;
 margin-right: 30px;
 }
 
-.icone{
-display: center;
-align-items: center;
-margin-right: 30px;
-}
-
-.menu{
-flex: 1;
-display: flex;
-justify-content: center;
-}
-
-ul{
-display: flex;
-align-items: center;
-gap: 40px;
-}
-ul li{
+.menu li{
 list-style: none;
-font-size: 16px;
+font-size:16px;
 }
-ul li a{
-text-decoration:none;
-color:#6e2c3d;
+
+.menu li a{
+text-decoration: none;
+color: #6e2c3d;
 }
- 
+
+/*PESQUISA*/
+
 .pesquisa{
 display: flex;
 align-items: center;
@@ -95,6 +107,22 @@ border-radius: 15px;
 height: 29px;
 padding: 0 10px;
 }
+
+ul li{
+list-style:none;
+font: size 17px;
+font-weight: 600;
+}
+ul li a {
+text-decoration: none;
+color:#6e2c3d;
+transition:0.3s;
+}
+ul li a:hover{
+  color: #c9a66b;
+}
+
+/*HERO-HOME*/
 
 .hero{
 height: 80vh;
@@ -129,10 +157,17 @@ background: #6e2c3d;
 color:white;
 font-size:16px;
 cursor: pointer;
+text-decoration: none;
+display:flex;
+align-items:center;
+justify-content:center;
 }
 .hero-btn:hover{
  background: #8a3a4f;
 }
+
+/*MAIS VENDIDOS-HOME*/
+
 .mais-vendidos h2{
 text-align:center;
 color:#6e2c3d;
@@ -142,7 +177,6 @@ margin-bottom:60px;
 .mais-vendidos{
 padding: 150px 50px;
 background: #f6f2ee;
-justify-content: center;
 }
 .produtos-grid{
 display:grid;
@@ -150,6 +184,9 @@ grid-template-columns: repeat(3,300px);
 justify-content: center;
 gap: 50px;
 }
+
+/*CARD*/
+
 .card-produto{
 background: white;
 border-radius:20px;
@@ -180,6 +217,8 @@ text-decoration: none;
 color: inherit;
 }
  
+/*BANNER DA CATEGORIA*/
+
 .banner-categoria{
   width: 100%;
   height: 450px;
@@ -211,6 +250,8 @@ align-items: center;
 color: #6e2c3d;
 font-family: "Cormorant Garamond";
 font-size: 60px;}
+
+/*VITRINE*/
 
 .vitrine{
 padding: 80px 40px;
@@ -265,12 +306,12 @@ color:#444444;
   font-weight: bold;
 }
 
-.produtos-destaque .card-produto{
-display:none;
-}
+/*CATALOGO*/
 
-.produtos-destaque .card-produto:first-child{
-  display:flex;
+.catalogo{
+padding:80px 40px;
+background:#f6f2ee;
+text-align: center;
 }
 
 .catalogo >h3{
@@ -287,6 +328,36 @@ margin-bottom: 60px;
   gap: 50px;
 }
 
+.produtos-catalogo .card-produto{
+width:330px;
+object-fit: cover;
+border-radius:15px;
+}
+
+.produtos-catalogo .card-prosutos img{
+width:250px;
+height: 330px;
+object-fit:cover;
+border-radius:15px;
+}
+.produtos-catalogo .card-produto{
+margin-top:10px;
+color: #6e2c3d;
+font-size: 18px;
+font-weight: bold;
+}
+
+.produtos-catalogo .card-produto{
+transition: transform 0.3, box-shadow 0.3;
+}
+
+.produtos-catalogo .card-produto:hover{
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(68,68, 68,0.12);
+}
+
+/*ENCOMENDA*/
+
 .encomenda{
 padding: 100px 40px;
 background: #6e2c3d;
@@ -298,7 +369,12 @@ flex-direction: column;
 align-items: center;
 gap: 20px;
 }
-encomenda p{
+.encomenda-conteudo h2{
+color:#f6f2ee;
+font-family:"Cormorant Garamond";
+font-size:35px;
+}
+.encomenda-conteudo p{
 color:#f6f2ee;
 font-size: 18px;
 }
@@ -309,9 +385,194 @@ border:none;
 border-radius: 25px;
 background: #c9a66b;
 cursor: pointer;
+text-decoration:none;
+color:#6e2c3d;
+font-size:16px;
 }
-.btn-encomenda a{
+.btn-encomenda:hover{
+opacity: 0.9;
+}
+
+/*PAGINA DE PRODUTO*/
+
+.produto {
+padding: 80px 50px;
+backgroud: #f6f2ee
+}
+.produto-conteudo{
+max-width: 1100px;
+margin:0 auto;
+display:grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+}
+
+/*IMAGEM*/
+
+.produto-imagem{
+display: flez;
+justify-content: center;
+align-items: center;
+background: #e8dcc3;
+padding: 30px;
+border-radius:20px;
+}
+
+.produto-imagem img{
+width:100%;
+max-width:480px;
+height:600px;
+object-fit: cover;
+border-radius: 15px;
+}
+
+/*INFORMAÇÕES*/
+
+.produto-informacoes {
+display: flex;
+flex-direction: column;
+gap:20px;
+}
+
+.produto-categoria{
+color: #c9a66b;
+font-family:"Cormorant Garamond";
+font-size:18px;
+font-weight: 600;
+
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.produto-informacoes h1{
+color:#6e2c3d;
+font-family: "Cormorant Garamond";
+font-size: 50px;
+}
+
+.produto-descricao{
+max-width: 450px;
+}
+
+.produto-descricao p{
+color: #444444;
+font-size: 17px;
+line-height: 1.7;
+}
+
+/*OPÇOES*/
+
+.produto-opcao{
+display:flex;
+flex-direction: column;
+gap:8px;
+}
+
+.produto-opcao h3{
+color:#6e2c3d;
+font-family:"Cormorant Garamond";
+font-size:22px;
+}
+
+.produto-opcao select{
+width:100%;
+max-width: 300px;
+padding: 12px 15px;
+border:1px solid #6e2c3d;
+border-radius: 8px;
+background: #ffffff;
+font-size: 15px;
+cursor:pointer;
+}
+
+/*BOTÃO DO PRODUTO*/
+
+.btn-prosuto{
+display: inline-flex;
+align-items: center;
+justify-content:center;
+width:220px;
+padding:14px 25px;
+margin-top:10px;
+background: #6e2c3d;
+color:#f6f2ee;
+border-radius:25px;
 text-decoration: none;
-color: #6e2c3d;
-font-size: 16px;
+font-size:16px;
+transition: 0.3s;
+}
+
+.btn-produto:hover {
+background:#8a3a4f;
+}
+
+/*DETALHES DA PEÇA*/
+
+.detalhes-produto{
+padding: 80px 50px;
+background: #ffffff;
+text-align: center;
+}
+
+.detalhes-produto{
+color:#6e2c3d;
+font-family: "Cormorant Garamond";
+font-size: 42px;
+margin-bottom: 50px;
+}
+
+.detalhes-conteudo{
+max-width:900px;
+margin:0 auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap:40px;
+}
+
+.detalhe {
+padding: 30px;
+background: #f6f2ee;
+border-radius: 15px;
+}
+
+.detalhe h3{
+color:#6e2c3d;
+font-family:"Cormorant Garamond";
+font-size: 24px;
+margin-bottom:12px;
+}
+
+.detalhe p{
+color:#444444;
+line-height: 1.6;
+}
+
+/*ENCOMENDA*/
+
+.produto + .detalhes-produto + .encomenda{
+margin-top:0;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px){
+.produto{
+padding: 50px 20px;
+}
+.produto-conteudo{
+grid-template-columns: 1fr;
+gap:40px;
+}
+.produto-imagem img{
+height: 450px;
+}
+.produto-informacoes h1{
+font-size:40px;
+}
+.detalhes-prosutos{
+padding:60px 20px;
+}
+.detalhes-conteudo{
+grid-template-columns: 1fr;
+}
 }
