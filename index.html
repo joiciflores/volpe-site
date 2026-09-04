@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volpe Crochê</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head> 
 <body>
@@ -21,15 +23,13 @@
                 </h2>
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="paginas/cropped.html">Cropped</a></li>
-                    <li><a href="paginas/short.html">Short</a></li>
-                    <li><a href="paginas/vestido.html">Vestido</a></li>
-                    <li><a href="paginas/infantil.html">Infantil</a></li>
-                    <li><a href="paginas/masculino.html">Masculino</a></li>                
-                </ul>
-            </div>
+            <ul class="menu">
+                <li><a href="paginas/cropped.html">Cropped</a></li>
+                <li><a href="paginas/short.html">Short</a></li>
+                <li><a href="paginas/vestido.html">Vestido</a></li>
+                <li><a href="paginas/infantil.html">Infantil</a></li>
+                <li><a href="paginas/masculino.html">Masculino</a></li>                
+            </ul>
 
             <div class="pesquisa">
                 <input 
@@ -37,8 +37,8 @@
                 class="srch"
                 placeholder="Buscar peças...">
 
-                <button class="btn" class="submit">
-    
+                <button class="btn submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
@@ -66,21 +66,28 @@
         <h2>Mais vendidos</h2>
         <div class="produtos-grid">
             <div class="card-produto">
-                <img src="imagens/produtos/croppedfenix.jpeg">
-                <h3>Cropped Fenix</h3>
-                <p>R$85,00</p>
+                <a href="paginas/produto.html?p=fenix">
+                    <img src="imagens/produtos/croppedfenix.jpeg">
+                    <h3>Cropped Fenix</h3>
+                    <p>R$85,00</p>
+                </a>
             </div>
             <div class="card-produto">
-                <img src="imagens/PRODUTOS/lunafoco.jpeg">
-                <h3>Cropped Luna</h3>
-                <p>R$75,00</p>
+                <a href="paginas/produto.html?p=luna">
+                    <img src="imagens/PRODUTOS/lunafoco.jpeg">
+                    <h3>Cropped Luna</h3>
+                    <p>R$75,00</p>
+                </a>
             </div>
             <div class="card-produto">
-                <img src="imagens/produtos/croppedMia.jpeg">
-                <h3>Cropped Mia</h3>
-                <p>R$65,00</p>
+                <a href="paginas/produto.html?p=mia">
+                    <img src="imagens/produtos/croppedMia.jpeg">
+                    <h3>Cropped Mia</h3>
+                    <p>R$65,00</p>
+                </a>
             </div>
     </div>
     </section>
+    <script src="java/script.js"></script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html  lang="pt-BR">
+<html lang="pt-BR">
     <head>
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Produto  | Volpe Crochê </title>
+        <title>Produto | Volpe Crochê</title>
 
         <!--GOOGLE FONTE-->
 
@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamon:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
           rel="stylesheet"
           >
 
@@ -32,7 +32,7 @@
         <header>
             <nav class="navbar">
                 <!--LOGO-->
-                
+
                 <div class="logo">
                     <a
                       href="../index.html"
@@ -48,7 +48,7 @@
                             Volpe<br>
                             Crochê
                         </h2>
-                      
+
                     </a>
                 </div>
                 <!--MENU-->
@@ -77,9 +77,9 @@
                             Infantil
                         </a>
                     </li>
-                
+
                     <li>
-                        <a ref="masculino.html">
+                        <a href="masculino.html">
                             Masculino
                         </a>
                     </li>
@@ -120,6 +120,9 @@
                           alt=""
                           >
 
+                        <div id="produto-miniaturas" class="produto-miniaturas">
+                        </div>
+
                     </div>
 
                     <!--INFORMAÇÕES DO PRODUTO-->
@@ -154,71 +157,64 @@
 
                                </div>
 
-                               <!--TAMANHO-->
+                               <!--TAMANHO E COR LADO A LADO-->
 
-                               <div class="produto-opcao">
+                               <div class="produto-variacoes">
 
-                                <h3>
-                                    Tamanho
-                                </h3>
+                                <div class="produto-opcao">
 
-                                <select id="produto-tamanho">
+                                    <h3>
+                                        Tamanho
+                                    </h3>
 
-                                    <option value="">
-                                        Selecione o tamanho
-                                    </option>
+                                    <select id="produto-tamanho">
 
-                                    <option value="PP">
-                                        PP
-                                    </option>
-                                    
-                                    <option value="P">
-                                        P
-                                    </option>
+                                        <option value="">
+                                            Selecione o tamanho
+                                        </option>
 
-                                    <option value="M">
-                                        M
-                                    </option>
+                                    </select>
 
-                                    <option value="G">
-                                        G
-                                    </option>
-                                    
-                                </select>
+                                </div>
+
+                                <div class="produto-opcao">
+
+                                    <h3>
+                                        Cor
+                                    </h3>
+
+                                    <select id="produto-cor">
+
+                                        <option value="">
+                                            Selecione a cor
+                                        </option>
+
+                                    </select>
+
+                                </div>
 
                                </div>
-                            
-                               <!--COR-->
 
-                               <div class="produto-cor">
+                               <!--ENCOMENDA-->
 
-                                <option value="">
-                                    selecione a cor
-                                </option>
+                               <div class="produto-acao">
 
-                            </select>
+                                <a
+                                  href="encomenda.html"
+                                  class="btn-produto"
+                                  >
+                                      Fazer encomenda
+                                    </a>
 
-                       </div>
-
-                       <!--ENCOMENDA-->
-
-                       |<div class="produto-acao">
-
-                        <a
-                          href="encomenda.html"
-                          class="btn-produto"
-                          >
-                              Fazer encomenda
-                            </a>
+                               </div>
 
                        </div>
-                    </div>
                 </div>
             </section>
 
             <!--DETALHES DA PEÇA-->
 
-            <section class="detalhes-produtos">
+            <section class="detalhes-produto">
 
                 <h2>
                     Sobre a peça
@@ -241,8 +237,8 @@
                     </div>
 
                     <!--PRODUÇÃO-->
-                    
-                    <div class="detalhes">
+
+                    <div class="detalhe">
 
                         <h3>
                             Produção
